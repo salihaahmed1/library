@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header>
+    <h1>pyramid Library</h1>
+    <p>Your gateway to infinite knowledge, research, and discovery.</p>
+  </header>
+  <hr>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="#home">Home & Rules</a> | 
+    <a href="#books">Books Catalog</a> | 
+    <a href="#membership">Membership Registration</a>
+  </nav>
+  <hr>
+
+  <main>
+
+    <!-- SECTION 1: HOME & LIBRARY RULES -->
+    <section id="home">
+      <h2>Welcome to Our Library</h2>
+      <p>The School Library provides students and faculty with resources, books, and quiet spaces necessary to achieve academic goals and cultivate a lifelong love for reading.</p>
+      
+      <h3>Official Library Rules & Regulations</h3>
+      <p>To preserve a productive and safe learning environment, all members must respect the following policies:</p>
+      <ul>
+        <li><strong>Silence Zone:</strong> Maintain strict silence inside the main reading halls and study cubicles.</li>
+        <li><strong>ID Policy:</strong> A valid student ID or Library Card must be presented at the checkout counter to borrow materials.</li>
+        <li><strong>Borrowing Limits:</strong> Students can borrow a maximum of 3 books simultaneously for a duration of 14 days.</li>
+        <li><strong>Late Returns:</strong> A fine of $0.50 per day will accumulate for overdue library materials.</li>
+        <li><strong>Care of Materials:</strong> Marking, highlighting, or damaging pages is strictly forbidden. Users must pay replacement costs for lost or ruined property.</li>
+        <li><strong>Food & Drinks:</strong> Only spill-proof water bottles are permitted. Outside food or open beverage cups are not allowed near bookshelves or computing units.</li>
+      </ul>
+    </section>
+    <hr>
+
+    <!-- SECTION 2: BOOKS CATALOG (10 BOOKS) -->
+    <section id="books">
+      <h2>Library Book Inventory Log</h2>
+      <p>Search through the catalog below to find available textbooks, literature pieces, and science resources:</p>
+      
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th>ISBN</th>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Genre / Category</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>978-0141439518</td>
+            <td>Pride and Prejudice</td>
+            <td>Jane Austen</td>
+            <td>Classic Literature</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>978-0451524935</td>
+            <td>1984</td>
+            <td>George Orwell</td>
+            <td>Dystopian Fiction</td>
+            <td>Checked Out</td>
+          </tr>
+          <tr>
+            <td>978-0743273565</td>
+            <td>The Great Gatsby</td>
+            <td>F. Scott Fitzgerald</td>
+            <td>Classic Fiction</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>978-0345339683</td>
+            <td>The Hobbit</td>
+            <td>J.R.R. Tolkien</td>
+            <td>Fantasy</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>978-0061120084</td>
+            <td>To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>Historical Fiction</td>
+            <td>Checked Out</td>
+          </tr>
+          <tr>
+            <td>978-0134093413</td>
+            <td>Introduction to Algorithms</td>
+            <td>Thomas H. Cormen</td>
+            <td>Computer Science</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>978-0321726376</td>
+            <td>University Physics</td>
+            <td>Hugh D. Young</td>
+            <td>Physics / Science</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>978-0134467795</td>
+            <td>Organic Chemistry</td>
+            <td>Paula Y. Bruice</td>
+            <td>Chemistry / Science</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>978-1118883570</td>
+            <td>Calculus: Single Variable</td>
+            <td>Deborah Hughes-Hallett</td>
+            <td>Mathematics</td>
+            <td>Checked Out</td>
+          </tr>
+          <tr>
+            <td>978-0393044720</td>
+            <td>Guns, Germs, and Steel</td>
+            <td>Jared Diamond</td>
+            <td>History / Anthropology</td>
+            <td>Available</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <hr>
+
+    <!-- SECTION 3: MEMBERSHIP REGISTRATION FORM -->
+    <section id="membership">
+      <h2>Library Card Membership Form</h2>
+      <p>Please enter your information completely to generate your account log and activate borrowing privileges.</p>
+      
+      <form action="#" method="POST">
+        <div>
+          <label for="fullname">Full Name:</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="your name" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="studentid">Student ID Number:</label><br>
+          <input type="text" id="studentid" name="student_id" placeholder="e.g., STU-12345" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="email">School Email Address:</label><br>
+          <input type="email" id="email" name="email" placeholder="pyramidschool.edu" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="grade">Grade / Class Level:</label><br>
+          <select id="grade" name="grade_level" required>
+            <option value="">-- Select Grade --</option>
+            <option value="freshman">Freshman (Grade 9)</option>
+            <option value="sophomore">Sophomore (Grade 10)</option>
+            <option value="junior">Junior (Grade 11)</option>
+            <option value="senior">Senior (Grade 12)</option>
+            <option value="faculty">Faculty Member</option>
+          </select>
+        </div>
+        <br>
+
+        <div>
+          <label>Preferred Account Type:</label><br>
+          <input type="radio" id="standard" name="account_type" value="standard" checked>
+          <label for="standard">Standard Reader (Borrow Books Only)</label><br>
+          <input type="radio" id="researcher" name="account_type" value="researcher">
+          <label for="researcher">Research Specialist (Access Digital Journals)</label>
+        </div>
+        <br>
+
+        <div>
+          <input type="checkbox" id="terms" name="rules_agreement" required>
+          <label for="terms">I verify that I have read the official library rules and promise to return books undamaged.</label>
+        </div>
+        <br>
+
+        <div>
+          <button type="submit">Submit Registration</button>
+          <button type="reset">Clear Entries</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+  <hr>
+
+  <!-- GLOBAL FOOTER -->
+  <footer>
+    <p>Copyright &copy; 2026 Scholars Central Library. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
